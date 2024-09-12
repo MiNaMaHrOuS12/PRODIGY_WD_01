@@ -1,0 +1,72 @@
+body
+{
+    margin: 0;
+    font-weight: bold;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    position: relative;
+}
+a::after
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 4px;
+    background-color: aqua;
+    width: 0;
+    transition: 0.3s;
+}
+li:hover a::after
+{
+    width: 100%;
+}
+#navBar{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    backdrop-filter: blur(10);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 80%;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+ul
+{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+}
+li
+{
+    list-style: none;
+    margin: 30px;
+}
+section
+{
+    padding-top: 170px;
+    height: 100vh;
+    font-size: 50px;
+}
+/* #home{
+    background-color: white;
+    padding-top: 170px;
+}
+#about{
+    background-color: rgb(208, 204, 204);
+}
+#blog{
+    background-color: rgb(148, 145, 145);
+}
+#contact{
+    background-color: rgb(76, 75, 75);
+}
+#projects{
+    background-color: rgb(50, 49, 49);
+} */
